@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/script.js"></script>
+</head>
+<h1>Kalkulator</h1>
+<body background="images/gambar.jpeg">
+	<div class="calculator">
+		<form>
+			<input type="text" id="result">
+			<table>
+				<tr>
+					<td><input type="button" value="7" onclick="addToResult('7')"></td>
+					<td><input type="button" value="8" onclick="addToResult('8')"></td>
+					<td><input type="button" value="9" onclick="addToResult('9')"></td>
+					<td><input type="button" value="+" onclick="chooseOperator('+')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="4" onclick="addToResult('4')"></td>
+					<td><input type="button" value="5" onclick="addToResult('5')"></td>
+					<td><input type="button" value="6" onclick="addToResult('6')"></td>
+					<td><input type="button" value="-" onclick="chooseOperator('-')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="1" onclick="addToResult('1')"></td>
+					<td><input type="button" value="2" onclick="addToResult('2')"></td>
+					<td><input type="button" value="3" onclick="addToResult('3')"></td>
+					<td><input type="button" value="*" onclick="chooseOperator('*')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="0" onclick="addToResult('0')"></td>
+					<td><input type="button" value="." onclick="addToResult('.')"></td>
+					<td><input type="button" value="C" onclick="clearResult()"></td>
+					<td><input type="button" value="/" onclick="chooseOperator('/')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="=" onclick="calculate()"></td>
+					<td><input type="button" value="<" onclick="backspace()"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
